@@ -12,50 +12,6 @@ background-repeat: no-repeat;
 
 }
 
-header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between right;
-  align-items: center;
-  position: fixed;
-  top: 0;
-}
-
-nav {
-  width: 50%;
-  max-width: 300px;
-  height: 50px;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
-}
-
-nav > ul > li {
-  color: #dfdfe2;
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  display: block;
-}
-
-nav > ul > li:hover {
-  background-color: #dfdfe2;
-  color: #1b1b32;
-  cursor: pointer;
-}
-
-li > a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .projects-grid {display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -70,12 +26,12 @@ object-fit: cover;}
 .welcome-section {text-align: center;
 margin-top: 50px;}
 
-#prof-pic { border-radius: 50px;
-height: 200px;
-width: 200px;
-margin-left: auto;
-margin-right: auto;
-object-fit: cover;}
+#prof-pic { border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;}
 
 h1 {color: white;
 text-align: center;
@@ -95,16 +51,25 @@ margin-top: 10px;}
 
 #poem {margin-bottom: 100px;}
 
-a {text-decoration: none;}
+a {color: white;
+  text-decoration: none;}
+  a:hover {color:gray}
 
 @media (max-width: 768px) {
   
-  .projects-grid {
-    background-color:black;
-    width: 100%;
-    height: 100%;
-    margin: 40px;
+ 
+
+  #prof-pic { border-radius: 100px;
+    height: 150px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px
-  }}
+    object-fit: cover;}
+  
+    #sect1 {
+      height: 150px;
+      width: 100%;
+      padding-top: 100px;
+      
+      }
+    h2 {text-align: center;}}
